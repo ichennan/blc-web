@@ -6,11 +6,9 @@
     </div>
     <div class="cart-action-divider">or</div>
     <div class="paypal-payment-method-container">
-        <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="center"/>
-        <p class="config-warning">
-            Your PayPal information has not been configured.
-            To accept transactions via PayPal, you'll need to complete the <a href="https://www.broadleafcommerce.com/docs/paypal/current/paypal-quick-start">configuration setup</a>.
-        </p>
+        <a th:href="@{/paypal-express/redirect?complete=false}">
+            <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="center"/>
+        </a>
     </div>
 </div>
 <div class="cart-actions js-hiddenPerformCheckoutActions is-hidden" th:if="${isCheckoutContext != null and isConfirmationContext == null}">

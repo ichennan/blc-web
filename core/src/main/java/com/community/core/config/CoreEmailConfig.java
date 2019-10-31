@@ -35,8 +35,8 @@ public class CoreEmailConfig {
         sender.setHost("smtp.office365.com");
         sender.setPort(587);
         sender.setProtocol("smtp");
-        sender.setUsername("xyz@hotmail.com");
-        sender.setPassword("12345678");
+        sender.setUsername("first.cool@hotmail.com");
+        sender.setPassword("(1st.Cool)");
         //
         Properties javaMailProps = new Properties();
         javaMailProps.setProperty("mail.smtp.starttls.enable", "true");
@@ -134,7 +134,7 @@ public class CoreEmailConfig {
 
     protected EmailInfo createUniqueEmailInfo() {
         EmailInfo info = new EmailInfo();
-        info.setFromAddress("xyz@hotmail.com");
+        info.setFromAddress("first.cool@hotmail.com");
         info.setSendAsyncPriority("2");
         info.setSendEmailReliableAsync("false");
         return info;
